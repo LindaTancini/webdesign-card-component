@@ -18,4 +18,67 @@
   --font-size-body: 1rem;
   --font-size-sm: 0.875rem;
   --font-size-xs: 0.75rem;
+
+  /* HUES */
+  --hue-blue: 250;
+  --hue-orange: 65;
+  --hue-gray: 250;
+
+  /* GRIGI (utilizzati per sfondi, testo e bordi) */
+  --color-gray-0: oklch(99% 0.01 var(--hue-gray));
+  --color-gray-1: oklch(95% 0.02 var(--hue-gray));
+  --color-gray-2: oklch(88% 0.02 var(--hue-gray));
+  --color-gray-3: oklch(74% 0.02 var(--hue-gray));
+  --color-gray-4: oklch(68% 0.02 var(--hue-gray));
+  --color-gray-5: oklch(63% 0.02 var(--hue-gray));
+  --color-gray-6: oklch(58% 0.02 var(--hue-gray));
+  --color-gray-7: oklch(53% 0.02 var(--hue-gray)); /* Testo principale */
+  --color-gray-8: oklch(49% 0.02 var(--hue-gray));
+  --color-gray-9: oklch(43% 0.02 var(--hue-gray));
+  --color-gray-10: oklch(37% 0.02 var(--hue-gray)); /* Testo scuro */
+  --color-gray-11: oklch(31% 0.02 var(--hue-gray));
+  --color-gray-12: oklch(25% 0.02 var(--hue-gray));
+  --color-gray-13: oklch(18% 0.02 var(--hue-gray));
+  --color-gray-14: oklch(15% 0.02 var(--hue-gray));
+  --color-gray-15: oklch(10% 0.02 var(--hue-gray));
+
+  /* BLU (Colore primario del brand, per titoli e elementi principali) */
+  --color-blue-0: oklch(99% 0.03 var(--hue-blue));
+  --color-blue-1: oklch(95% 0.06 var(--hue-blue));
+  --color-blue-2: oklch(88% 0.12 var(--hue-blue));
+  --color-blue-3: oklch(74% 0.14 var(--hue-blue));
+  --color-blue-4: oklch(68% 0.16 var(--hue-blue));
+  --color-blue-5: oklch(63% 0.19 var(--hue-blue));
+  --color-blue-6: oklch(58% 0.2 var(--hue-blue));
+  --color-blue-7: oklch(
+    53% 0.21 var(--hue-blue)
+  ); /* Colore principale per titoli */
+  --color-blue-8: oklch(49% 0.2 var(--hue-blue));
+  --color-blue-9: oklch(43% 0.19 var(--hue-blue));
+  --color-blue-10: oklch(37% 0.17 var(--hue-blue));
+  --color-blue-11: oklch(31% 0.16 var(--hue-blue));
+  --color-blue-12: oklch(25% 0.12 var(--hue-blue));
+  --color-blue-13: oklch(18% 0.09 var(--hue-blue));
+  --color-blue-14: oklch(15% 0.06 var(--hue-blue));
+  --color-blue-15: oklch(10% 0.03 var(--hue-blue));
+
+  /* ARANCIONE (Colore secondario, per pulsanti e dettagli che richiedono attenzione) */
+  --color-orange-0: oklch(99% 0.03 var(--hue-orange));
+  --color-orange-1: oklch(95% 0.06 var(--hue-orange));
+  --color-orange-2: oklch(88% 0.12 var(--hue-orange));
+  --color-orange-3: oklch(74% 0.14 var(--hue-orange));
+  --color-orange-4: oklch(68% 0.16 var(--hue-orange));
+  --color-orange-5: oklch(63% 0.19 var(--hue-orange));
+  --color-orange-6: oklch(58% 0.2 var(--hue-orange));
+  --color-orange-7: oklch(
+    53% 0.21 var(--hue-orange)
+  ); /* Colore principale per call-to-action */
+  --color-orange-8: oklch(49% 0.2 var(--hue-orange)); /* Colore hover */
+  --color-orange-9: oklch(43% 0.19 var(--hue-orange));
+  --color-orange-10: oklch(37% 0.17 var(--hue-orange));
+  --color-orange-11: oklch(31% 0.16 var(--hue-orange));
+  --color-orange-12: oklch(25% 0.12 var(--hue-orange));
+  --color-orange-13: oklch(18% 0.09 var(--hue-orange));
+  --color-orange-14: oklch(15% 0.06 var(--hue-orange));
+  --color-orange-15: oklch(10% 0.03 var(--hue-orange));
 }
