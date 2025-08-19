@@ -50,8 +50,8 @@ export const Default: Story = {
                 {/* Mostra il valore numerico reale della variabile CSS */}
                 <SpaceCalc value={`--spacing-${key}`} />
               </span>
-              {/* Blocco viola la cui dimensione è legata alla variabile CSS */}
-              <span className="info" />
+              {/* Blocco verde la cui dimensione è legata alla variabile CSS */}
+              <span className="info-spacing" />
             </dd>
           </React.Fragment>
         ))}

@@ -24,7 +24,7 @@ dd {
   align-items: center;
 }
 
-.info {
+.info-spacing {
   background: purple;
   height: 1rem;
   width: var(--story-spacing); /* larghezza dinamica dalla variabile CSS */
