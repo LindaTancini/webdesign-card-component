@@ -58,7 +58,7 @@ export const Default: Story = {
       <h1>Colors - Card Palette </h1>
 
       {/* --- GRIGI NATURALI --- */}
-      <h3>Gray</h3>
+      <h2>Gray</h2>
       <div className="container">
         {Array.from({ length: 16 }).map((_, i) => (
           <ClickToCopy
@@ -70,7 +70,7 @@ export const Default: Story = {
       </div>
 
       {/* --- BLU --- */}
-      <h3>Blue</h3>
+      <h2>Blue</h2>
       <div className="container">
         {Array.from({ length: 16 }).map((_, i) => (
           <ClickToCopy
@@ -82,7 +82,7 @@ export const Default: Story = {
       </div>
 
       {/* --- ARANCIONE --- */}
-      <h3>Orange</h3>
+      <h2>Orange</h2>
       <div className="container">
         {Array.from({ length: 16 }).map((_, i) => (
           <ClickToCopy
