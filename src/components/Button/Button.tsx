@@ -1,3 +1,6 @@
+//Importazioni
+import "./Button.css";
+
 // Definizione del tipo delle proprietà accettate dal componente Button
 export type ButtonProps = {
   label: string; // Testo visibile all'interno del bottone
@@ -20,7 +23,7 @@ export function Button({
       onClick={onClick} // Associa la funzione onClick
       disabled={disabled} // Applica lo stato disabilitato se true
       aria-label={arialabel} // Aggiunge etichetta accessibile per screen reader
-      className={`btn btn-${size}`} // Classe dinamica in base alla dimensione
+      className={`orange-btn orange-btn-${size}`} // Classe dinamica in base alla dimensione
     >
       {label} {/* Contenuto testuale del bottone */}
     </button>
