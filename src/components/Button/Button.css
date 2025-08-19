@@ -1,0 +1,5 @@
+/* Dimensioni bottone */
+.orange-btn-small {
+  font-size: var(--font-size-xs);
+  padding: var(--spacing-xs) var(--spacing-sm);
+}
