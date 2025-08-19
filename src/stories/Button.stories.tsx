@@ -52,11 +52,20 @@ export const Disabled: Story = {
   },
 };
 
-// Storia del botton small
+// Storia del bottone small
 export const Small: Story = {
   args: {
     label: "Small Button",
     size: "small",
-    onClick: () => console.log("Hai cliccato il bottone!"),
+    onClick: () => console.log("Hai cliccato il bottone small!"),
+  },
+};
+
+// Storia del bottone medium
+export const Medium: Story = {
+  args: {
+    label: "Medium Button",
+    size: "medium",
+    onClick: () => console.log("Hai cliccato il bottone medium!"),
   },
 };
