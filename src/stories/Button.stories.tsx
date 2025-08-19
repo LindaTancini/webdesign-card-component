@@ -42,3 +42,12 @@ export const Default: Story = {
     onClick: () => console.log("Hai cliccato il bottone!"), // Funzione al click
   },
 };
+
+// Storia di un bottone disabilitato
+export const Disabled: Story = {
+  args: {
+    label: "Disabled",
+    arialabel: "Disabled",
+    disabled: true,
+  },
+};
