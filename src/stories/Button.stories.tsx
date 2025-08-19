@@ -69,3 +69,12 @@ export const Medium: Story = {
     onClick: () => console.log("Hai cliccato il bottone medium!"),
   },
 };
+
+// Storia del bottone large
+export const Large: Story = {
+  args: {
+    label: "Large Button",
+    size: "large",
+    onClick: () => console.log("Hai cliccato il bottone large!"),
+  },
+};
