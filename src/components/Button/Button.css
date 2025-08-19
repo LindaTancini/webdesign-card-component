@@ -8,3 +8,8 @@
   font-size: var(--font-size-body);
   padding: var(--spacing-sm) var(--spacing-md);
 }
+
+.orange-btn-large {
+  font-size: var(--font-size-h5);
+  padding: var(--spacing-md) var(--spacing-lg);
+}
