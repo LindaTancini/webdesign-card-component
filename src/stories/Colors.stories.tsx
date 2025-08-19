@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { ButtonHTMLAttributes } from "react";
+import "../styles/colorpalette.css";
 
 // Definizione dei metadati per Storybook
 const meta: Meta = {
@@ -37,24 +38,6 @@ const ClickToCopy: React.FC<
 export const Default: Story = {
   render: () => (
     <div>
-      {/* Stili interni per layout dei colori e info box */}
-      <style>
-        {`
-                .container {
-                    display: grid;                       
-                    grid-template-columns: repeat(16, 1fr); 
-                    height: 3rem;                        
-                    margin-bottom: var(--spacing-lg);    
-                }
-                .info {
-                    padding: var(--spacing-md);          
-                    margin-bottom: var(--spacing-lg);    
-                    border-radius: 0.25rem;              
-                    border: 1px solid;                   
-                }
-                `}
-      </style>
-
       <h1>Colors - Card Palette </h1>
 
       {/* --- GRIGI NATURALI --- */}

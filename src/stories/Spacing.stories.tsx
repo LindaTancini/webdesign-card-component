@@ -1,5 +1,6 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react-vite";
+import "../styles/spacing.css";
 
 // Definizione dei metadati per Storybook
 const meta: Meta = {
@@ -27,52 +28,10 @@ const SpaceCalc = ({ value }: { value: string }) => {
   return <span>{spacing}</span>; // Visualizza il valore testuale (es: "16px")
 };
 
-// Componente che inietta stili CSS direttamente nella pagina Storybook
-const Style: React.FC = () => {
-  return (
-    <style>{`
-     dl {
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      display: grid;
-      max-width: calc(550rem / 16); /* circa 34.375rem */
-      grid-template-columns: min-content max-content min-content;
-      border-bottom: none;
-      border-radius: 0.5rem;
-     }
-      dt {
-        font-weight: 600;
-        padding: var(--spacing-sm) var(--spacing-md); /* padding verticale e orizzontale */
-        border-bottom: 1px solid #ccc;
-      }
-
-      dd {
-        padding: var(--spacing-sm) var(--spacing-md);
-        border-bottom: 1px solid #ccc;
-        font-family: monospace; /* font a larghezza fissa per il valore */
-        display: grid;
-        gap: 1ch; /* spazio tra colonne */
-        grid-template-columns: subgrid;
-        grid-column: 2/4; /* occupa le colonne 2 e 3 della grid padre */
-        align-items: center; 
-      }
-
-      .info {
-        background: purple; 
-        height: 1rem;
-        width: var(--story-spacing);  /* larghezza dinamica dalla variabile CSS */
-        display: block; 
-      }
-    `}</style>
-  );
-};
-
 // Definizione della storia Storybook Default
 export const Default: Story = {
   render: () => (
     <>
-      {/* Iniezione degli stili definiti sopra */}
-      <Style />
       {/* Lista descrittiva per ogni dimensione di spacing */}
       <dl>
         {["0", "xs", "sm", "md", "lg", "xl"].map((key) => (
@@ -80,7 +39,13 @@ export const Default: Story = {
             {/* Etichetta della dimensione (es: "sm") */}
             <dt>{key}</dt>
             {/* Valore e blocco visivo, con variabile CSS dinamica per dimensione */}
-            <dd style={{ "--story-spacing": `var(--spacing-${key})` }}>
+            <dd
+              style={
+                {
+                  "--story-spacing": `var(--spacing-${key})`,
+                } as React.CSSProperties
+              }
+            >
               <span>
                 {/* Mostra il valore numerico reale della variabile CSS */}
                 <SpaceCalc value={`--spacing-${key}`} />
