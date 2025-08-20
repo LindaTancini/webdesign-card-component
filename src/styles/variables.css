@@ -81,4 +81,7 @@
   --color-orange-13: oklch(18% 0.09 var(--hue-orange));
   --color-orange-14: oklch(15% 0.06 var(--hue-orange));
   --color-orange-15: oklch(10% 0.03 var(--hue-orange));
+
+  /* Timing */
+  --timing: 1s;
 }
