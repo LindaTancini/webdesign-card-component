@@ -43,6 +43,16 @@ export const Default: Story = {
   },
 };
 
+// Storia di un botton "Compra Ora"
+export const CompraOra: Story = {
+  args: {
+    label: "Compra ora",
+    size: "medium",
+    disabled: false,
+    arialabel: "Compra ora",
+  },
+};
+
 // Storia di un bottone disabilitato
 export const Disabled: Story = {
   args: {
