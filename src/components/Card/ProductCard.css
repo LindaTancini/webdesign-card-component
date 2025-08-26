@@ -40,7 +40,7 @@
 
 /* Titolo Card */
 .card-title {
-  font-size: var(--font-size-body);
+  font-size: var(--font-size-h6);
   font-weight: 600;
   color: var(--color-blue-7);
   margin: 0 0 var(--spacing-xs) 0;
@@ -48,7 +48,7 @@
 
 /* Prezzo Card */
 .card-price {
-  font-size: var(--font-size-h6);
+  font-size: var(--font-size-h5);
   color: var(--color-orange-7);
   font-weight: bold;
   margin: 0;
