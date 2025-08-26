@@ -1,5 +1,6 @@
 /* Struttura Card */
 .card-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: var(--color-gray-0);
@@ -13,6 +14,19 @@
 /* Hover Card */
 .card-container:hover {
   transform: translateY(-4px);
+}
+
+/* Badge sconto della Card */
+.card-badge {
+  position: absolute;
+  top: var(--spacing-sm);
+  right: var(--spacing-sm);
+  background-color: var(--color-orange-7);
+  color: var(--color-gray-0);
+  font-size: var(--font-size-xs);
+  font-weight: bold;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--spacing-xs);
 }
 
 /* Contenuto Card */
