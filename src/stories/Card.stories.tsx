@@ -33,9 +33,9 @@ type Story = StoryObj<typeof ProductCard>;
 export const Default: Story = {
   args: {
     image: cuccia, // Immagine di esempio
-    badge: "-20%", // Badge di esempio
-    title: "Titolo del Prodotto", // Titolo di esempio
-    price: 29.99, // Prezzo di esempio
+    badge: "-10%", // Badge di esempio
+    title: "Leopet - Cuccia Piramide Cleo Funny Colors 40x40x40cm", // Titolo di esempio
+    price: 34.99, // Prezzo di esempio
     onBuy: () => console.log("Hai cliccato su Compra ora"), // Funzione al click
   },
 };
