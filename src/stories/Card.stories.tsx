@@ -10,6 +10,7 @@ const meta: Meta<typeof ProductCard> = {
   argTypes: {
     // Definizione dei controlli interattivi per modificare le props in Storybook
     image: { control: "text" }, // Campo di testo per la prop "image"
+    badge: { control: "text" }, // Campo di testo per la prop "badge"
     title: { control: "text" }, // Campo di testo per la prop "title"
     price: { control: "number" }, // Campo numerico per la prop "price"
     onBuy: { action: "onBuy clicked" }, // Aggiunge un'azione per il click sul bottone
@@ -31,6 +32,7 @@ type Story = StoryObj<typeof ProductCard>;
 export const Default: Story = {
   args: {
     image: "https://placecats.com/401/300", // Immagine di esempio
+    badge: "-20%", // Badge di esempio
     title: "Titolo del Prodotto", // Titolo di esempio
     price: 29.99, // Prezzo di esempio
     onBuy: () => console.log("Hai cliccato su Compra ora"), // Funzione al click
