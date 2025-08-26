@@ -1,5 +1,6 @@
 // Importazioni
 import { Button } from "../Button/Button";
+import "./ProductCard.css";
 
 // Defizione del tipo delle proprietà della Card
 export type ProductCardProps = {
