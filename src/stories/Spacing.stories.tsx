@@ -7,6 +7,13 @@ const meta: Meta = {
   title: "Atoms/Spacing", // Titolo della storia nella sidebar di Storybook
   parameters: {
     layout: "centered", // Centra il contenuto nello spazio della storia
+    docs: {
+      description: {
+        story:
+          "Questa storia mostra le principali dimensioni di spacing definite nel design system. " +
+          "Ogni voce della lista rappresenta una variabile CSS (--spacing-0, --spacing-xs, etc.) e mostra sia il valore numerico reale sia un blocco visivo la cui dimensione è legata alla variabile stessa. Utile per visualizzare rapidamente gli spazi disponibili per margini, padding e layout.",
+      },
+    },
   },
   tags: ["autodocs"], // Tag per abilitare la generazione automatica della documentazione
 };

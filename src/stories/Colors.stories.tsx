@@ -7,6 +7,14 @@ const meta: Meta = {
   title: "Atoms/Colors", // Titolo della storia nella sidebar di Storybook
   parameters: {
     layout: "centered", // Centra il contenuto nello spazio della storia
+    docs: {
+      description: {
+        story:
+          "Questa storia mostra la palette dei colori definita nel design system. " +
+          "Ogni colore è rappresentato da un pulsante ClickToCopy che permette di copiare facilmente la variabile CSS corrispondente. " +
+          "Sono presenti tonalità di grigi, blu e arancione, utili per UI components e sfondi.",
+      },
+    },
   },
   tags: ["autodocs"], // Tag per abilitare la generazione automatica della documentazione
 };

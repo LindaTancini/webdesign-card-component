@@ -5,6 +5,13 @@ const meta: Meta = {
   title: "Atoms/Typography", // Titolo della storia nella sidebar di Storybook
   parameters: {
     layout: "centered", // Centra il contenuto nello spazio della storia
+    docs: {
+      description: {
+        story:
+          "Questa storia mostra le diverse tipologie di font e le relative dimensioni definite nel design system. " +
+          "Sono inclusi i font per intestazioni (h1–h6), il font hero principale, il font body e le dimensioni più piccole (sm, xs). Utile per visualizzare rapidamente la gerarchia tipografica e scegliere le dimensioni corrette per testi e titoli.",
+      },
+    },
   },
   tags: ["autodocs"], // Tag per abilitare la generazione automatica della documentazione
 };
