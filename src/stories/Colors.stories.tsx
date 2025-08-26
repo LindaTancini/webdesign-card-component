@@ -12,7 +12,7 @@ const meta: Meta = {
         story:
           "Questa storia mostra la palette dei colori definita nel design system. " +
           "Ogni colore è rappresentato da un pulsante ClickToCopy che permette di copiare facilmente la variabile CSS corrispondente. " +
-          "Sono presenti tonalità di grigi, blu e arancione, utili per UI components e sfondi.",
+          "Sono presenti tonalità di grigi, verde salvia e terracotta, utili per UI components e sfondi.",
       },
     },
   },
