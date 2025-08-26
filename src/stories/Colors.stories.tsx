@@ -60,26 +60,26 @@ export const Default: Story = {
         ))}
       </div>
 
-      {/* --- BLU --- */}
-      <h2>Blue</h2>
+      {/* --- VERDE SALVIA --- */}
+      <h2>Sage</h2>
       <div className="container">
         {Array.from({ length: 16 }).map((_, i) => (
           <ClickToCopy
-            style={{ backgroundColor: `var(--color-blue-${i})` }} // Sfondo colore blu
+            style={{ backgroundColor: `var(--color-sage-${i})` }} // Sfondo colore verde salvia
             key={i} // Chiave unica per React
-            value={`--color-blue-${i}`} // Valore da copiare
+            value={`--color-sage-${i}`} // Valore da copiare
           />
         ))}
       </div>
 
-      {/* --- ARANCIONE --- */}
-      <h2>Orange</h2>
+      {/* --- TERRACOTTA --- */}
+      <h2>Terracotta</h2>
       <div className="container">
         {Array.from({ length: 16 }).map((_, i) => (
           <ClickToCopy
-            style={{ backgroundColor: `var(--color-orange-${i})` }} // Sfondo colore arancione
+            style={{ backgroundColor: `var(--color-terracotta-${i})` }} // Sfondo colore terracotta
             key={i} // Chiave unica per React
-            value={`--color-orange-${i}`} // Valore da copiare
+            value={`--color-terracotta-${i}`} // Valore da copiare
           />
         ))}
       </div>
