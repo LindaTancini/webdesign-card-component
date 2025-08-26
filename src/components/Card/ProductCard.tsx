@@ -20,7 +20,7 @@ export function ProductCard({ image, title, price, onBuy }: ProductCardProps) {
       {/* Contenuto */}
       <div className="card-content">
         <h3 className="card-title">{title}</h3>
-        <p className="card-price">{price}</p>
+        <p className="card-price">{price} €</p>
       </div>
 
       {/* Footer con bottone */}
