@@ -1,6 +1,7 @@
 // Importazioni
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { ProductCard } from "../components/Card/ProductCard";
+import cuccia from "../assets/cuccia.png";
 
 // Configurazione principale della "storia" del componente Card
 const meta: Meta<typeof ProductCard> = {
@@ -31,7 +32,7 @@ type Story = StoryObj<typeof ProductCard>;
 // Storia di default della Card
 export const Default: Story = {
   args: {
-    image: "https://placecats.com/401/300", // Immagine di esempio
+    image: cuccia, // Immagine di esempio
     badge: "-20%", // Badge di esempio
     title: "Titolo del Prodotto", // Titolo di esempio
     price: 29.99, // Prezzo di esempio
