@@ -1,0 +1,16 @@
+/* Struttura Card */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-gray-0);
+  border: 1px solid var(--color-gray-2);
+  border-radius: var(--spacing-sm);
+  overflow: hidden;
+  max-width: 280px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+/* Hover Card */
+.card-container:hover {
+  transform: translateY(-4px);
+}
