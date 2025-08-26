@@ -34,7 +34,7 @@ export const Default: Story = {
   args: {
     image: cuccia, // Immagine di esempio
     badge: "-10%", // Badge di esempio
-    title: "Leopet - Cuccia Piramide Cleo Funny Colors 40x40x40cm", // Titolo di esempio
+    title: "Cuccia Piramide Cleo", // Titolo di esempio
     price: 34.99, // Prezzo di esempio
     onBuy: () => console.log("Hai cliccato su Compra ora"), // Funzione al click
   },
