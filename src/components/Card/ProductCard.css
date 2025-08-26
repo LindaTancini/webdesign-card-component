@@ -3,14 +3,15 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: var(--color-gray-0);
-  border: 1px solid var(--color-gray-2);
+  background-color: var(--color-sage-0);
+  border: 1px solid var(--color-sage-1);
   border-radius: var(--spacing-sm);
   overflow: hidden;
   max-width: 280px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease;
 }
+
 /* Hover Card */
 .card-container:hover {
   transform: translateY(-4px);
@@ -21,12 +22,14 @@
   position: absolute;
   top: var(--spacing-sm);
   right: var(--spacing-sm);
-  background-color: var(--color-orange-7);
+  background-color: var(--color-terracotta-8);
   color: var(--color-gray-0);
   font-size: var(--font-size-xs);
   font-weight: bold;
   padding: var(--spacing-xs) var(--spacing-sm);
-  border-radius: var(--spacing-xs);
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 /* Contenuto Card */
@@ -42,14 +45,14 @@
 .card-title {
   font-size: var(--font-size-h6);
   font-weight: 600;
-  color: var(--color-blue-7);
+  color: var(--color-sage-10);
   margin: 0 0 var(--spacing-xs) 0;
 }
 
 /* Prezzo Card */
 .card-price {
   font-size: var(--font-size-h5);
-  color: var(--color-orange-7);
+  color: var(--color-terracotta-7);
   font-weight: bold;
   margin: 0;
 }

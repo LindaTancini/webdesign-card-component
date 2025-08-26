@@ -7,21 +7,27 @@
   box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.377),
     4px 4px 12px rgba(0, 0, 0, 0.377);
   color: #ffffff;
-  background-color: light-dark(var(--color-orange-7), var(--color-orange-9));
+  background-color: light-dark(
+    var(--color-terracotta-8),
+    var(--color-terracotta-9)
+  );
 }
 
 /* Hover */
 .orange-btn:hover:not(:disabled) {
-  background-color: light-dark(var(--color-orange-6), var(--color-orange-8));
+  background-color: light-dark(
+    var(--color-terracotta-7),
+    var(--color-terracotta-8)
+  );
+  color: #ffffff;
 }
 
 /* Focus (accessibilità) */
 .orange-btn:focus {
-  outline: 2px solid light-dark(var(--color-orange-4), var(--color-orange-7));
-  outline-offset: 2px;
-  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.377),
-    4px 4px 12px rgba(0, 0, 0, 0.377),
-    0 0 0 3px light-dark(var(--color-orange-4), var(--color-orange-7));
+  outline: none;
+  box-shadow: 0 0 0 3px
+      light-dark(var(--color-terracotta-4), var(--color-terracotta-7)),
+    inset 4px 4px 8px rgba(0, 0, 0, 0.377), 4px 4px 12px rgba(0, 0, 0, 0.377);
 }
 
 /* Disabled */
