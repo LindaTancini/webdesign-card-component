@@ -57,5 +57,6 @@
 /* Footer Card */
 .card-footer {
   display: flex;
+  justify-content: flex-end;
   padding: var(--spacing-sm) var(--spacing-md);
 }
