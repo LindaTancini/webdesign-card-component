@@ -1,0 +1,28 @@
+/* Badge generico */
+.badge {
+  position: absolute;
+  top: var(--spacing-sm);
+  right: var(--spacing-sm);
+  background-color: light-dark(
+    var(--color-terracotta-8),
+    var(--color-terracotta-9)
+  );
+  color: var(--color-gray-0);
+  font-size: var(--font-size-xs);
+  font-weight: bold;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Badge Sconto */
+.badge-discount {
+  background-color: var(--color-terracotta-7);
+}
+
+/* Badge Sold Out */
+.badge-soldout {
+  background-color: var(--color-gray-8);
+  color: var(--color-gray-0);
+}
