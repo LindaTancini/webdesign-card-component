@@ -36,9 +36,9 @@ export function ProductCard({
       {/* Footer con bottone */}
       <div className="card-footer">
         <Button
-          label="Compra ora"
+          label="Aggiungi al carrello"
+          arialabel={`Aggiungi al carrello : ${title} al prezzo di ${price} euro`}
           size="small"
-          arialabel={`Compra ora: ${title}`}
           onClick={onBuy}
         />
       </div>
