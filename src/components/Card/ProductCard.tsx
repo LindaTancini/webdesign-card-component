@@ -22,13 +22,15 @@ export function ProductCard({
   return (
     <article className="card-container">
       {/* Immagine */}
-      <img src={image} alt={title} className="card-image" />
-      <span className="card-badge">{badge}</span>
+      <img src={image} alt={`Immagine di ${title}`} className="card-image" />
+
+      {/* Badge solo se presente */}
+      {badge && <span className="card-badge">{badge}</span>}
 
       {/* Contenuto */}
       <div className="card-content">
         <h3 className="card-title">{title}</h3>
-        <span className="card-price">{price} €</span>
+        <p className="card-price">{price} €</p>
       </div>
 
       {/* Footer con bottone */}
