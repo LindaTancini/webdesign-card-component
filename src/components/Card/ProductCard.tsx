@@ -1,11 +1,13 @@
 // Importazioni
+import { Badge } from "../Badge/Badge";
 import { Button } from "../Button/Button";
 import "./ProductCard.css";
 
-// Defizione del tipo delle proprietà della Card
+// Definizione del tipo delle proprietà della Card
 export type ProductCardProps = {
   image: string; // Immagine del prodotto
-  badge?: string; // Badge opzionale (es. "Nuovo", "In offerta")
+  discount?: string; // Badge sconto (es. "-20%")
+  soldOut?: boolean; // Indica se il prodotto è esaurito
   title: string; // Titolo del prodotto
   price: number; // Prezzo del prodotto
   onBuy?: () => void; // Funzione callback per aggiungere al carrello
@@ -14,18 +16,27 @@ export type ProductCardProps = {
 // Definizione del componente Card come funzione React
 export function ProductCard({
   image,
-  badge,
+  discount,
+  soldOut = false,
   title,
   price,
   onBuy,
 }: ProductCardProps) {
   return (
-    <article className="card-container">
+    <article
+      className="card-container"
+      aria-label={`Prodotto: ${title}${soldOut ? " esaurito" : ""}`}
+    >
       {/* Immagine */}
-      <img src={image} alt={`Immagine di ${title}`} className="card-image" />
+      <figure className="card-image">
+        <img src={image} alt={`Immagine di ${title}`} />
 
-      {/* Badge solo se presente */}
-      {badge && <span className="card-badge">{badge}</span>}
+        {/* Badge sconto */}
+        {discount && <Badge label={discount} variant="discount" />}
+
+        {/* Badge esaurito */}
+        {soldOut && <Badge label="Sold Out" variant="soldout" />}
+      </figure>
 
       {/* Contenuto */}
       <div className="card-content">
@@ -36,9 +47,14 @@ export function ProductCard({
       {/* Footer con bottone */}
       <div className="card-footer">
         <Button
-          label="Aggiungi al carrello"
-          arialabel={`Aggiungi al carrello : ${title} al prezzo di ${price} euro`}
+          label={soldOut ? "Non disponibile" : "Aggiungi al carrello"}
+          arialabel={
+            soldOut
+              ? `Prodotto ${title} non disponibile`
+              : `Aggiungi ${title} al carrello al prezzo di ${price} euro`
+          }
           size="small"
+          disabled={soldOut}
           onClick={onBuy}
         />
       </div>
