@@ -43,13 +43,13 @@ export const Default: Story = {
   },
 };
 
-// Storia di un botton "Compra Ora"
-export const CompraOra: Story = {
+// Storia di un botton "Aggiungi al carrello"
+export const AggiungiAlCarrello: Story = {
   args: {
-    label: "Compra ora",
+    label: "Aggiungi al carrello",
     size: "medium",
     disabled: false,
-    arialabel: "Compra ora",
+    arialabel: "Aggiungi al carrello",
   },
 };
 
