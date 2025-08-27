@@ -32,10 +32,20 @@ export function ProductCard({
         <img src={image} alt={`Immagine di ${title}`} />
 
         {/* Badge sconto */}
-        {discount && <Badge label={discount} variant="discount" />}
+        {discount && (
+          <>
+            <Badge label={discount} variant="discount" />
+            <span className="sr-only">{discount} di sconto</span>
+          </>
+        )}
 
         {/* Badge esaurito */}
-        {soldOut && <Badge label="Sold Out" variant="soldout" />}
+        {soldOut && (
+          <>
+            <Badge label="Sold Out" variant="soldout" />
+            <span className="sr-only">Prodotto esaurito</span>
+          </>
+        )}
       </figure>
 
       {/* Contenuto */}
