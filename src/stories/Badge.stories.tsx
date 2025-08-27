@@ -45,11 +45,7 @@ export const AllBadges: Story = {
         variant="default"
         style={{ position: "static" }}
       />
-      <Badge
-        label="-20% Offerta"
-        variant="discount"
-        style={{ position: "static" }}
-      />
+      <Badge label="-20%" variant="discount" style={{ position: "static" }} />
       <Badge
         label="Sold Out"
         variant="soldout"
