@@ -66,6 +66,7 @@ export function ProductCard({
           size="small"
           disabled={soldOut}
           onClick={onBuy}
+          icon="cart"
         />
       </div>
     </article>
