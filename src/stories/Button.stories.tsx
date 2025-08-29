@@ -39,6 +39,7 @@ export const Default: Story = {
     label: "Button", // Testo del bottone
     disabled: false, // Abilitato di default
     arialabel: "Button", // Aria-label per l’accessibilità
+    icon: "cart", // Icona del carrello
     onClick: () => console.log("Hai cliccato il bottone!"), // Funzione al click
   },
 };
@@ -50,6 +51,7 @@ export const AggiungiAlCarrello: Story = {
     size: "medium",
     disabled: false,
     arialabel: "Aggiungi al carrello",
+    icon: "cart",
   },
 };
 
@@ -59,6 +61,7 @@ export const Disabled: Story = {
     label: "Disabled",
     arialabel: "Disabled",
     disabled: true,
+    icon: "cart", // Icona del carrello
   },
 };
 
@@ -67,6 +70,7 @@ export const Small: Story = {
   args: {
     label: "Small Button",
     size: "small",
+    icon: "cart", // Icona del carrello
     onClick: () => console.log("Hai cliccato il bottone small!"),
   },
 };
@@ -76,6 +80,7 @@ export const Medium: Story = {
   args: {
     label: "Medium Button",
     size: "medium",
+    icon: "cart", // Icona del carrello
     onClick: () => console.log("Hai cliccato il bottone medium!"),
   },
 };
@@ -85,6 +90,7 @@ export const Large: Story = {
   args: {
     label: "Large Button",
     size: "large",
+    icon: "cart", // Icona del carrello
     onClick: () => console.log("Hai cliccato il bottone large!"),
   },
 };
