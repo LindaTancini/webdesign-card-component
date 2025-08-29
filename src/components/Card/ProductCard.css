@@ -64,6 +64,17 @@
 }
 
 /* Media Queries per Responsività */
+/* Tablet: max-width 834px */
+@media screen and (max-width: 834px) {
+  .card-title {
+    font-size: var(--font-size-h4);
+  }
+
+  .card-price {
+    font-size: var(--font-size-h5);
+  }
+}
+/* Mobile: max-width 480px */
 @media screen and (max-width: 480px) {
   .card-container {
     max-width: 100%;
