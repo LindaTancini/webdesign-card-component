@@ -1,4 +1,8 @@
 .orange-btn {
+  display: inline-flex; /* rende flessibile per icona + testo */
+  align-items: center; /* centra verticalmente icona e testo */
+  justify-content: center;
+  gap: 8px; /* distanza tra icona e testo */
   font-weight: 600;
   border: none;
   border-radius: 10px;
@@ -11,6 +15,11 @@
     var(--color-terracotta-8),
     var(--color-terracotta-9)
   );
+}
+
+/* icona nascosta in desktop  e tablet */
+.orange-btn svg {
+  display: none;
 }
 
 /* Hover */
@@ -52,4 +61,28 @@
 .orange-btn-large {
   font-size: var(--font-size-h5);
   padding: var(--spacing-md) var(--spacing-lg);
+}
+
+/* Media Queries per Responsività */
+@media screen and (max-width: 480px) {
+  .orange-btn {
+    font-size: var(--font-size-sm);
+    padding: var(--spacing-sm);
+    justify-content: center;
+  }
+
+  /* Testo nascosto in mobile */
+  .orange-btn .button-text {
+    display: none;
+  }
+
+  /* Icona visibile solo in mobile */
+  .orange-btn svg {
+    display: inline-block;
+    width: var(--font-size-h4);
+    height: var(--font-size-h4);
+    margin: 0;
+    vertical-align: middle;
+    color: var(--color-gray-0);
+  }
 }
