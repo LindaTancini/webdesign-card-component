@@ -75,6 +75,29 @@ La palette è costruita con tre famiglie principali: **Grigi**, **Verde Salvia**
 
 ---
 
+## 📱 Responsive Design
+
+I componenti sono progettati per adattarsi a diversi schermi, dai desktop ai dispositivi mobile, mantenendo leggibilità e usabilità.
+
+### Card
+
+- `.card-container`
+  - **Desktop**: max-width 280px
+  - **Tablet (≤834px)**: titolo più grande (`--font-size-h4`), prezzo adeguato (`--font-size-h5`)
+  - **Mobile (≤480px)**: max-width 100%, font ridotti (`--font-size-sm`), testo leggibile su schermi piccoli
+
+### Bottone (`.orange-btn`)
+
+- **Dimensioni adattive**: small, medium, large
+- **Tablet (≤834px)**: font e padding ridotti, bottone centrato
+- **Mobile (≤320px)**: font ancora più piccolo, padding ridotto, testo nascosto (`.button-text`), icona visibile solo in mobile
+
+### Badge (`.badge`)
+
+- **Tablet e Mobile (≤480px)**: font più piccolo, padding ridotto per adattarsi alle card compatte
+
+---
+
 ## 📖 Documentazione
 
 Tutti i componenti sono documentati con **Storybook**, comprensivi di:
@@ -94,10 +117,22 @@ npm run storybook
 
 ## 📸 Screenshot
 
+### BUTTON
+
 ![Anteprima del bottone su Storybook](./public/doc-button.png)
+
+### BADGE
 
 ![Anteprima del badge su Storybook](./public/doc-badge.png)
 
+### DEFAULT CARD
+
 ![Anteprima della card default su Storybook](./public/doc-card.png)
 
+### DISCOUNT CARD
+
 ![Anteprima della card con badge di sconto su Storybook](./public/card-discount.png)
+
+### RESPONSIVE MOBILE + SOLD OUT CARD
+
+![Anteprima della card in mobile con bottone disabilitato e badge sold out su Storybook](./public/responsive-soldout.png)
