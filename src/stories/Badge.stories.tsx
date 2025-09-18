@@ -10,6 +10,7 @@ const meta: Meta<typeof Badge> = {
   argTypes: {
     // Definizione dei controlli interattivi per modificare le props in Storybook
     label: { control: "text" }, // Campo di testo per la prop "label"
+    arialabel: { control: "text" }, // Campo di testo per l'aria-label
     variant: {
       control: { type: "radio" }, // Scelta tramite radio button
       options: ["default", "discount", "soldout"],
@@ -31,26 +32,29 @@ const meta: Meta<typeof Badge> = {
 export default meta;
 type Story = StoryObj<BadgeProps>;
 // Storia di default del Badge
-export const AllBadges: Story = {
-  render: () => (
-    <div
-      style={{
-        display: "flex",
-        gap: "1rem",
-        alignItems: "center",
-      }}
-    >
-      <Badge
-        label="Default Badge"
-        variant="default"
-        style={{ position: "static" }}
-      />
-      <Badge label="-20%" variant="discount" style={{ position: "static" }} />
-      <Badge
-        label="Sold Out"
-        variant="soldout"
-        style={{ position: "static" }}
-      />
-    </div>
-  ),
+export const Default: Story = {
+  args: {
+    label: "Default Badge", // Testo del badge
+    arialabel: "Default Badge", // Aria-label per l’accessibilità
+    variant: "default", // Variante di default
+    style: { position: "static" }, // Stile per evitare problemi di posizionamento in Storybook
+  },
+};
+// Storia di un badge di sconto
+export const Discount: Story = {
+  args: {
+    label: "-20%", // Testo del badge
+    arialabel: "-20%", // Aria-label per l’accessibilità
+    variant: "discount", // Variante di sconto
+    style: { position: "static" }, // Stile per evitare problemi di posizionamento in Storybook
+  },
+};
+// Storia di un badge di esaurito
+export const SoldOut: Story = {
+  args: {
+    label: "Sold Out", // Testo del badge
+    arialabel: "Sold Out", // Aria-label per l’accessibilità
+    variant: "soldout", // Variante di esaurito
+    style: { position: "static" }, // Stile per evitare problemi di posizionamento in Storybook
+  },
 };
