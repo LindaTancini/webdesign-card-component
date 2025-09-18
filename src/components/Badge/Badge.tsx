@@ -4,6 +4,7 @@ import "./Badge.css";
 // Definizione del tipo delle proprietà accettate dal componente Badge
 export type BadgeProps = {
   label: string; // Testo visibile all'interno del badge
+  arialabel?: string; // Aria-label per l'accessibilità (opzionale)
   variant?: "default" | "discount" | "soldout"; // Variante del badge (opzionale, default: "default")
   style?: React.CSSProperties; // Stili CSS personalizzati (opzionale)
 };
